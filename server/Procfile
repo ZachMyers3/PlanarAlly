@@ -1,2 +1,2 @@
-web: python planarserver.py
+web: gunicorn wsgi:app --worker-class aiohttp.worker.GunicornWebWorker
 

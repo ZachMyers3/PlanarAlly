@@ -64,7 +64,7 @@ app.on_shutdown.append(on_shutdown)
 def start_http(host, port):
     logger.warning(" RUNNING IN NON SSL CONTEXT ")
     web.run_app(
-        app, host=host, port=config.getint("Webserver", "port"),
+        app, host=host, port=port,
     )
 
 
